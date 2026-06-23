@@ -1,3 +1,131 @@
 https://www.ahnegao.com.br/wp-content/uploads/2016/11/imagens-18.jpg
 
 https://images.pexels.com/photos/707837/pexels-photo-707837.jpeg?cs=srgb&dl=pexels-fabianreitmeier-707837.jpg&fm=jpg
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Interação com Imagens</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial, sans-serif;
+    background:#f4f4f4;
+    text-align:center;
+    padding:30px;
+}
+
+h1{
+    margin-bottom:20px;
+}
+
+.galeria{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:20px;
+}
+
+.imagem{
+    width:350px;
+    max-width:90%;
+    border-radius:12px;
+    cursor:pointer;
+    transition:.3s;
+    box-shadow:0 4px 10px rgba(0,0,0,.2);
+}
+
+.imagem:hover{
+    transform:scale(1.05);
+}
+
+.info{
+    max-width:700px;
+    margin:auto;
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    box-shadow:0 4px 10px rgba(0,0,0,.1);
+}
+
+button{
+    margin-top:15px;
+    padding:10px 20px;
+    border:none;
+    border-radius:8px;
+    background:#2563eb;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+<body>
+
+<h1>Galeria Interativa</h1>
+
+<div class="galeria">
+    <img
+        id="img1"
+        class="imagem"
+        src="https://www.ahnegao.com.br/wp-content/uploads/2016/11/imagens-18.jpg"
+        alt="Imagem 1">
+
+    <img
+        id="img2"
+        class="imagem"
+        src="https://images.pexels.com/photos/707837/pexels-photo-707837.jpeg?cs=srgb&dl=pexels-fabianreitmeier-707837.jpg&fm=jpg"
+        alt="Imagem 2">
+</div>
+
+<div class="info">
+    <h2 id="titulo">Clique em uma imagem</h2>
+    <p id="descricao">
+        As informações aparecerão aqui.
+    </p>
+
+    <button id="trocar">
+        Trocar Imagens
+    </button>
+</div>
+
+<script>
+const img1 = document.getElementById("img1");
+const img2 = document.getElementById("img2");
+const titulo = document.getElementById("titulo");
+const descricao = document.getElementById("descricao");
+const trocar = document.getElementById("trocar");
+
+img1.addEventListener("click", () => {
+    titulo.textContent = "Imagem 1";
+    descricao.textContent =
+        "Você clicou na primeira imagem. O JavaScript detectou a interação.";
+});
+
+img2.addEventListener("click", () => {
+    titulo.textContent = "Imagem 2";
+    descricao.textContent =
+        "Você clicou na segunda imagem. O JavaScript detectou a interação.";
+});
+
+trocar.addEventListener("click", () => {
+    const temp = img1.src;
+    img1.src = img2.src;
+    img2.src = temp;
+
+    titulo.textContent = "Imagens Trocadas";
+    descricao.textContent =
+        "As imagens trocaram de posição usando JavaScript.";
+});
+</script>
+
+</body>
+</html>
