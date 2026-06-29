@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Animado</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f0f2f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .flashcard-container {
+            perspective: 1000px;
+        }
+
+        .flashcard {
+            width: 350px;
+            height: 220px;
+            cursor: pointer;
+            transform-style: preserve-3d;
+            transition: transform 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            border-radius: 15px;
+        }
+
+        .flashcard:hover {
+            transform: scale(1.02);
+        }
+
+        /* Classe injetada via JS para girar o card */
+        .flashcard.flipped {
+            transform: rotateY(180deg);
+        }
+
+        .card-face {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 30px;
+            border-radius: 15px;
+            text-align: center;
+        }
+
+        .card-front {
+            background-color: #ffffff;
+            color: #1a1a1a;
+            border: 2px solid #e1e4e8;
+        }
+
+        .card-front h2 {
+            font-size: 1.2rem;
+            color: #007bff;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 15px;
+        }
+
+        .card-front p {
+            font-size: 1.5rem;
+            font-weight: 600;
+        }
+
+        .card-back {
+            background-color: #007bff;
+            color: #ffffff;
+            transform: rotateY(180deg);
+        }
+
+        .card-back p {
+            font-size: 1.3rem;
+            line-height: 1.6;
+        }
+
+        .hint {
+            position: absolute;
+            bottom: 15px;
+            font-size: 0.8rem;
+            color: #a0aec0;
+        }
+
+        .card-back .hint {
+            color: #ebf8ff;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="flashcard-container">
+        <!-- Adicione a classe "flipped" manualmente ou via JS para virar -->
+        <div class="flashcard" onclick="this.classList.toggle('flipped')">
+            
+            <!-- Frente do Card -->
+            <div class="card-face card-front">
+                <h2>Pergunta</h2>
+                <p>O que significa a sigla CSS?</p>
+                <div class="hint">Clique para ver a resposta</div>
+            </div>
+
+            <!-- Verso do Card -->
+            <div class="card-face card-back">
+                <p>Cascading Style Sheets <br> (Folhas de Estilo em Cascata)</p>
+                <div class="hint">Clique para voltar</div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>
