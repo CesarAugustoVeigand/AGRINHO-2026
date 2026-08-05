@@ -3,22 +3,298 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Título da Página</title>
+    <meta name="description" content="AGRINHO 2026 - Agro Forte, Futuro Sustentável. Equilíbrio entre produção agrícola e preservação do meio ambiente.">
+    <title>AGRINHO 2026 | Agro Forte, Futuro Sustentável</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <!-- Header / Navegação -->
+    <header class="site-header" id="topo">
+        <div class="container header-inner">
+            <a href="#topo" class="logo" aria-label="AGRINHO 2026 - Página inicial">
+                <span class="logo-icon">🌱</span>
+                <span class="logo-text">AGRINHO <strong>2026</strong></span>
+            </a>
 
-    <header>
-        <!-- Topo do site: logo e menu de navegação -->
+            <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <nav class="site-nav" id="site-nav" aria-label="Menu principal">
+                <ul>
+                    <li><a href="#sobre">Sobre</a></li>
+                    <li><a href="#temas">Temas</a></li>
+                    <li><a href="#solucoes">Soluções</a></li>
+                    <li><a href="#desafios">Desafios</a></li>
+                    <li><a href="#quiz">Quiz</a></li>
+                    <li><a href="#contato" class="btn-nav">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <!-- Conteúdo principal da página -->
+        <!-- Hero -->
+        <section class="hero" id="hero">
+            <div class="hero-bg"></div>
+            <div class="container hero-content">
+                <p class="hero-badge">Concurso Agrinho 2026</p>
+                <h1>Agro Forte,<br><span>Futuro Sustentável</span></h1>
+                <p class="hero-subtitle">
+                    Equilíbrio entre produção agrícola e preservação do meio ambiente.
+                    Tecnologia, ciência e responsabilidade para alimentar o presente sem comprometer o amanhã.
+                </p>
+                <div class="hero-actions">
+                    <a href="#solucoes" class="btn btn-primary">Conhecer soluções</a>
+                    <a href="#quiz" class="btn btn-outline">Testar conhecimentos</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sobre -->
+        <section class="section" id="sobre">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">O Projeto</span>
+                    <h2>Sobre o AGRINHO 2026</h2>
+                    <p>Um espaço de aprendizado e inovação que une estudantes, professores e o agronegócio brasileiro em torno da sustentabilidade.</p>
+                </div>
+
+                <div class="about-grid">
+                    <article class="about-card">
+                        <div class="about-icon">🌾</div>
+                        <h3>Produção responsável</h3>
+                        <p>Mostrar que é possível produzir alimentos, fibras e energia com eficiência, preservando solo, água e biodiversidade.</p>
+                    </article>
+                    <article class="about-card">
+                        <div class="about-icon">🔬</div>
+                        <h3>Ciência e tecnologia</h3>
+                        <p>Incentivar o uso de agricultura de precisão, energias renováveis e práticas regenerativas no campo.</p>
+                    </article>
+                    <article class="about-card">
+                        <div class="about-icon">👥</div>
+                        <h3>Formação de jovens</h3>
+                        <p>Estimular o pensamento crítico e o protagonismo de estudantes na construção de um agro mais sustentável.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <!-- Temas principais -->
+        <section class="section section-alt" id="temas">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conteúdo temático</span>
+                    <h2>Temas Centrais do Agrinho 2026</h2>
+                    <p>Áreas prioritárias para equilibrar produtividade e conservação ambiental.</p>
+                </div>
+
+                <div class="themes-grid">
+                    <div class="theme-card" data-theme="precisao">
+                        <div class="theme-number">01</div>
+                        <h3>Agricultura de precisão</h3>
+                        <p>Sensores, drones e dados para aplicar insumos no momento e na quantidade certa, reduzindo desperdício e impacto ambiental.</p>
+                    </div>
+                    <div class="theme-card" data-theme="solo">
+                        <div class="theme-number">02</div>
+                        <h3>Conservação do solo</h3>
+                        <p>Práticas regenerativas, plantio direto, cobertura vegetal e rotação de culturas para recuperar a saúde do solo.</p>
+                    </div>
+                    <div class="theme-card" data-theme="agua">
+                        <div class="theme-number">03</div>
+                        <h3>Uso consciente da água</h3>
+                        <p>Irrigação eficiente, reuso e monitoramento de bacias para garantir segurança hídrica no campo.</p>
+                    </div>
+                    <div class="theme-card" data-theme="energia">
+                        <div class="theme-number">04</div>
+                        <h3>Energias renováveis</h3>
+                        <p>Solar, biomassa e biogás no meio rural, diminuindo a dependência de combustíveis fósseis.</p>
+                    </div>
+                    <div class="theme-card" data-theme="circular">
+                        <div class="theme-number">05</div>
+                        <h3>Economia circular</h3>
+                        <p>Redução de desperdícios, reaproveitamento de resíduos e valorização de subprodutos agrícolas.</p>
+                    </div>
+                    <div class="theme-card" data-theme="biodiversidade">
+                        <div class="theme-number">06</div>
+                        <h3>Biodiversidade</h3>
+                        <p>Preservação de áreas de vegetação nativa, corredores ecológicos e manejo integrado de pragas.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Soluções / Inovação -->
+        <section class="section" id="solucoes">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Inovação e impacto</span>
+                    <h2>Soluções Sustentáveis em Destaque</h2>
+                    <p>Ideias práticas que conciliam alta produtividade com responsabilidade ambiental.</p>
+                </div>
+
+                <div class="solutions-wrapper">
+                    <div class="solution-card active" data-index="0">
+                        <div class="solution-visual">
+                            <div class="solution-icon">🛰️</div>
+                        </div>
+                        <div class="solution-body">
+                            <h3>Monitoramento por satélite e drones</h3>
+                            <p>Imagens de alta resolução permitem identificar falhas de plantio, estresse hídrico e pragas de forma precoce, reduzindo o uso de defensivos e água.</p>
+                            <ul>
+                                <li>Menor aplicação de insumos</li>
+                                <li>Aumento da eficiência produtiva</li>
+                                <li>Dados em tempo quase real</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="solution-card" data-index="1">
+                        <div class="solution-visual">
+                            <div class="solution-icon">💧</div>
+                        </div>
+                        <div class="solution-body">
+                            <h3>Irrigação inteligente</h3>
+                            <p>Sistemas baseados em sensores de umidade do solo e previsão do tempo aplicam água somente quando e onde é necessário.</p>
+                            <ul>
+                                <li>Economia de até 40% de água</li>
+                                <li>Redução de energia elétrica</li>
+                                <li>Melhor qualidade da colheita</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="solution-card" data-index="2">
+                        <div class="solution-visual">
+                            <div class="solution-icon">🔋</div>
+                        </div>
+                        <div class="solution-body">
+                            <h3>Energia solar no campo</h3>
+                            <p>Painéis fotovoltaicos em propriedades rurais abastecem bombas, cercas elétricas e sistemas de refrigeração com baixa emissão de carbono.</p>
+                            <ul>
+                                <li>Autossuficiência energética</li>
+                                <li>Redução de custos operacionais</li>
+                                <li>Contribuição para metas climáticas</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="solution-nav">
+                    <button class="sol-dot active" data-index="0" aria-label="Solução 1"></button>
+                    <button class="sol-dot" data-index="1" aria-label="Solução 2"></button>
+                    <button class="sol-dot" data-index="2" aria-label="Solução 3"></button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Desafios / Impacto -->
+        <section class="section section-alt" id="desafios">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Conscientização</span>
+                    <h2>Desafios do Agro Sustentável</h2>
+                    <p>O que precisa ser enfrentado para garantir produção e preservação lado a lado.</p>
+                </div>
+
+                <div class="challenges-grid">
+                    <div class="challenge-item">
+                        <h3>Mudanças climáticas</h3>
+                        <p>Eventos extremos (secas, enchentes e ondas de calor) exigem sistemas mais resilientes e adaptados.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-value="75"></div>
+                        </div>
+                        <span class="progress-label">Alta urgência</span>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Uso de recursos naturais</h3>
+                        <p>Solo, água e biodiversidade precisam ser geridos com metas claras de conservação.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-value="65"></div>
+                        </div>
+                        <span class="progress-label">Prioridade elevada</span>
+                    </div>
+                    <div class="challenge-item">
+                        <h3>Acesso à tecnologia</h3>
+                        <p>Pequenos e médios produtores ainda enfrentam barreiras de custo e capacitação.</p>
+                        <div class="progress-bar">
+                            <div class="progress-fill" data-value="55"></div>
+                        </div>
+                        <span class="progress-label">Desafio estrutural</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Quiz interativo (JS) -->
+        <section class="section" id="quiz">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">Interatividade</span>
+                    <h2>Quiz: Agro Forte, Futuro Sustentável</h2>
+                    <p>Teste seus conhecimentos sobre práticas sustentáveis no agronegócio.</p>
+                </div>
+
+                <div class="quiz-box" id="quiz-box">
+                    <div class="quiz-progress">
+                        <div class="quiz-bar" id="quiz-bar"></div>
+                    </div>
+                    <p class="quiz-counter" id="quiz-counter">Pergunta 1 de 5</p>
+                    <h3 class="quiz-question" id="quiz-question">Carregando...</h3>
+                    <div class="quiz-options" id="quiz-options"></div>
+                    <div class="quiz-feedback" id="quiz-feedback" hidden></div>
+                    <div class="quiz-actions">
+                        <button class="btn btn-primary" id="quiz-next" hidden>Próxima</button>
+                        <button class="btn btn-outline" id="quiz-restart" hidden>Reiniciar quiz</button>
+                    </div>
+                    <div class="quiz-result" id="quiz-result" hidden>
+                        <h3>Resultado final</h3>
+                        <p class="result-score" id="result-score"></p>
+                        <p class="result-message" id="result-message"></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato / CTA -->
+        <section class="section section-cta" id="contato">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Faça parte da mudança</h2>
+                    <p>O AGRINHO 2026 convida estudantes e escolas a desenvolverem projetos que unam produção e sustentabilidade. Compartilhe ideias, aprenda e inspire.</p>
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-row">
+                            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+                            <input type="email" id="email" name="email" placeholder="Seu e-mail" required>
+                        </div>
+                        <textarea id="mensagem" name="mensagem" rows="4" placeholder="Sua mensagem ou ideia de projeto" required></textarea>
+                        <button type="submit" class="btn btn-primary">Enviar mensagem</button>
+                    </form>
+                    <p class="form-success" id="form-success" hidden>Mensagem enviada com sucesso! Obrigado pelo interesse no AGRINHO 2026.</p>
+                </div>
+            </div>
+        </section>
     </main>
 
-    <footer>
-        <!-- Rodapé: direitos autorais e contatos -->
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-inner">
+            <div class="footer-brand">
+                <span class="logo-icon">🌱</span>
+                <span>AGRINHO 2026</span>
+            </div>
+            <p>Agro Forte, Futuro Sustentável — equilíbrio entre produção e meio ambiente.</p>
+            <p class="footer-copy">&copy; 2026 Projeto Agrinho. Conteúdo educativo para conscientização.</p>
+        </div>
     </footer>
+
+    <!-- Botão voltar ao topo -->
+    <button class="back-to-top" id="back-to-top" aria-label="Voltar ao topo">↑</button>
 
     <script src="script.js"></script>
 </body>
