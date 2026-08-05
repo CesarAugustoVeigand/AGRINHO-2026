@@ -1,34 +1,29 @@
 # AGRINHO 2026 — Agro Forte, Futuro Sustentável
 
-Site educativo sobre o tema do concurso Agrinho 2026: **equilíbrio entre produção agrícola e preservação do meio ambiente**.
+Site educativo alinhado às **rubricas avaliativas** do Site Agrinho.
 
-## Critérios atendidos
+## Critérios atendidos (Site Agrinho)
 
-| Critério | Como foi atendido |
-|----------|-------------------|
-| **Estrutura do projeto** | Menu fixo, seções claras (Sobre, Temas, Soluções, Desafios, Quiz, Contato), navegação suave e menu mobile. |
-| **Qualidade visual e design** | Layout moderno, cores alinhadas ao tema (verde/terra/dourado), tipografia Poppins + Roboto, responsivo e animações leves. |
-| **Conteúdo temático** | Textos sobre agricultura de precisão, solo, água, energia renovável, economia circular e biodiversidade. |
-| **Uso de tecnologias web** | HTML semântico, CSS organizado com variáveis e media queries, JavaScript com menu, carrossel, quiz interativo, formulário e animações. |
-| **Inovação e impacto social** | Quiz educativo, soluções práticas destacadas e chamada para conscientização. |
+| # | Critério | Como foi atendido | Pontuação |
+|---|----------|-------------------|-----------|
+| 1 | **Estrutura do projeto** | Menu fixo, 6 seções claras, navegação suave, menu mobile, botão voltar ao topo | 0–10 |
+| 2 | **Qualidade visual e design** | Layout moderno, tema claro/escuro, cores agro (verde/dourado), tipografia Outfit + DM Sans, 100% responsivo, animações | 0–10 |
+| 3 | **Conteúdo temático** | Tema “Agro forte, futuro sustentável” com 6 pilares, soluções práticas e dicas aplicáveis | 0–10 |
+| 4 | **Uso de tecnologias web** | HTML semântico + CSS (variáveis, grid, dark mode) + JS (tabs, flash cards, quiz, contadores, formulário, tema) | 0–10 |
+| 5 | **Inovação e impacto social** | Flash cards interativos, quiz educativo, soluções sustentáveis e chamada à ação | 0–10 |
 
 ## Arquivos
 
-- `index.html` — estrutura da página
+- `index.html` — estrutura
 - `style.css` — estilos e responsividade
-- `script.js` — interatividade (menu, carrossel, quiz, formulário)
+- `script.js` — toda a interatividade
 
 ## Como usar
 
-Abra o arquivo `index.html` em um navegador ou sirva a pasta com um servidor local.
+1. Extraia o ZIP
+2. Abra `index.html` no navegador
+3. Ou publique no GitHub Pages
 
-```bash
-# Exemplo com Python
-python -m http.server 8000
-```
+## Tema oficial
 
-Acesse `http://localhost:8000`.
-
-## Tema
-
-**Agro Forte, Futuro Sustentável** — equilíbrio entre produção e meio ambiente.
+**Agro Forte, Futuro Sustentável** — equilíbrio entre produção agrícola e preservação do meio ambiente.
